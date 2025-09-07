@@ -51,7 +51,7 @@ public class ETLPipeline {
 			}
 		}
 		catch(FileNotFoundException se) {
-			System.out.println("Error: File Not Found in location \"./data/product.csv\"");
+			System.out.println("Error: File Not Found in location \"" + inputFile.toString() + "\"");
 			System.exit(0);
 		}
 		// catch generic exceptions separately for a more applicable error message
@@ -108,8 +108,8 @@ public class ETLPipeline {
 	
 	
 	public static void main(String[] args) {
-		File inputFile = new File("./data/product.csv");
-		File outputFile = new File("./data/transformed_products.csv");
+		File inputFile = new File("./LSP_REPO_orangeTree43/data/product.csv");
+		File outputFile = new File("./LSP_REPO_orangeTree43/data/transformed_products.csv");
 		extract(inputFile);
 		transformData();
 		loadData(outputFile);
