@@ -14,6 +14,7 @@ public class CSVExtractor {
 	// constant for use in delimiting the input csv
 	public static final String COMMA_DELIMITER = ",";
 		
+	//header is the top line of the csv
 	String header;
 	int numberOfRowsRead = 0;
 	
@@ -49,6 +50,7 @@ public class CSVExtractor {
 				productList.add(tempProduct);
 			}
 		}
+		// catch if input file is non-existent
 		catch(FileNotFoundException se) {
 			System.out.println("Error: File Not Found in location \"" + inputFile.toString() + "\"");
 			System.exit(0);

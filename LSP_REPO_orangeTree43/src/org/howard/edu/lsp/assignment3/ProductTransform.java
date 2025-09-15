@@ -1,13 +1,13 @@
 package org.howard.edu.lsp.assignment3;
 
 /*
- * Class for transforming Product objects
+ * Class for transforming single Product objects
  */
 
 public class ProductTransform{
 	
 	/*
-	 *Sets priceRange based on price
+	 *Sets priceRange based on price and defined constant values
 	 */
 	public void calculatePriceRange(Product currentProduct) {
 		float low = 10;
@@ -63,6 +63,7 @@ public class ProductTransform{
 	
 	/*
 	 * @param percentage - discounts the price by the percentage given
+	 * so 10 == 10%
 	 */
 	private void discount(Product currentProduct, float percentage) {
 		percentage = 1 - (percentage / 100);

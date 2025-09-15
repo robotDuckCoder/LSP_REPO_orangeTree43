@@ -9,6 +9,7 @@ import java.util.List;
  */
 
 public class CSVLoader {
+	// header is the top line of csv
 	String header;
 	List<Product> productList;
 	

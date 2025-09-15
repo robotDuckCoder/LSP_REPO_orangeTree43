@@ -23,9 +23,10 @@ public class ETLPipeline {
 		CSVLoader loader = new CSVLoader(header, transformedList);
 		loader.loadData(outputFile);
 		
-		// Run summary
+		// Print out run summary
+		// add one to the number of rows transformed because we transformed the header row in this class
 		System.out.println("Run Summary: " + extractor.getNumberOfRowsRead() + " rows read, "
-		+ transformer.getNumberOfRowsTransformed() + " rows transformed, "
+		+ (transformer.getNumberOfRowsTransformed() + 1) + " rows transformed, "
 		+ (extractor.getNumberOfRowsRead() - transformer.getNumberOfRowsTransformed()) + " rows skipped, "
 		+ "and the output path was: " + outputFile.getAbsolutePath());
 	}

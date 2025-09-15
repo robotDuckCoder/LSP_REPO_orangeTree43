@@ -64,6 +64,7 @@ public class Product {
 	
 	/*
 	 * @return - returns a toString() in a CSV format
+	 * ProductId,Name,Price,Category,PriceRange
 	 */
 	public String returnCSV() {
 		String returnString = "";
