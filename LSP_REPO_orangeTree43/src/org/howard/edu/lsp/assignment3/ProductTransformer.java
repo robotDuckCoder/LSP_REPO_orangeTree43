@@ -2,7 +2,7 @@ package org.howard.edu.lsp.assignment3;
 
 import java.util.List;
 
-public class ProductTransformer {
+public class ProductTransformer implements TransformsProducts {
 	int numberOfRowsTransformed = 0;
 	
 	public int getNumberOfRowsTransformed() {
@@ -12,7 +12,7 @@ public class ProductTransformer {
 	/*
 	 * @return the modified data from the product list
 	 */
-	public List<Product> transformData(List<Product> productList) {
+	public List<Product> transformProductList(List<Product> productList) {
 		 // because we are creating a new column in the data
 		numberOfRowsTransformed++;
 		ProductTransform pt = new ProductTransform();

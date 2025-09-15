@@ -27,7 +27,7 @@ Prompt 3:
 Response 3:
 	That’s a really good question — and you’re right to point out that your ProductTransform class is intended to serve as the transformation layer. The nuance is in how dedicated and object-oriented the design of that transformer is.
 	
-Response 3 then went on to describe how I could make the ProductTransform class more object oriented, which I dismissed as overkill for the scope of the current project, because it was talking about having modular transformations, while the project is only asking for 1 transformation currently.
+Response 3 then went on to describe how I could make the ProductTransform class more object oriented, which I adapted into the ProductTransformerInterface in order to make it easier for different ProductTransformers to be created.
 
 Prompt 4:
 	How would you go about giving ProductTransform an interface based contract?
@@ -37,6 +37,6 @@ Response 4:
 
 Here’s how I would think about it at a design level (no code, just concepts):
 
-Response 4 then went on to detail how I could implement an interface based contract, which I again see as over complicated for a single specific transformation, if I need to implement another transformation, then it will be useful to implement, but in this case the cost outweighs the benefit.
+Response 4 then went on to detail how I could implement an interface based contract, which did not help me much in implementing an interface, so I went on to look at a stack overflow page which described interfaces to me in a much simpler and more straightforward way. https://stackoverflow.com/questions/3355408/explaining-interfaces-to-students is the stack overflow page.
 
 END OF AI TRANSCRIPT.

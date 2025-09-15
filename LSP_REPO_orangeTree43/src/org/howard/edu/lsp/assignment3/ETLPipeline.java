@@ -16,8 +16,8 @@ public class ETLPipeline {
 		String header = extractor.getHeader() + ",PriceRange";
 		
 		//transform data
-		ProductTransformer transformer = new ProductTransformer();
-		List<Product> transformedList = transformer.transformData(productList);
+		TransformsProducts transformer = new ProductTransformer();
+		List<Product> transformedList = transformer.transformProductList(productList);
 		
 		//load data
 		CSVLoader loader = new CSVLoader(header, transformedList);
