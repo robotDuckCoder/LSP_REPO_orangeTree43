@@ -3,7 +3,7 @@ package org.howard.edu.lsp.assignment3;
 import java.util.List;
 
 public class ProductTransformer implements TransformsProducts {
-	int numberOfRowsTransformed = 1;
+	int numberOfRowsTransformed = 0;
 	
 	public int getNumberOfRowsTransformed() {
 		return numberOfRowsTransformed;
