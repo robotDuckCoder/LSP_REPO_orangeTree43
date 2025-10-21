@@ -1,0 +1,1 @@
+Resources used: https://rollbar.com/guides/java/how-to-throw-exceptions-in-java/ for a refresher on how to throw an exception in Java.
